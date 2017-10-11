@@ -1,0 +1,28 @@
+
+<!doctype html>
+<head>     
+<title>cm의 inchi 값 구하기</title>    
+<style>     input{font-size: 1em;}     
+body{font-size: 2em;}     
+button{font-size: 1em;}    </style>
+</head>
+
+<body>    
+	<h1 id=display>cm를 inchi로 바꿔보세요.</h1>    
+	<input type="text" id="cm" placeholder="숫자값">cm  
+	<br>
+	<button id="action">계산하기</button>  
+	
+	<script>
+	action.onclick=function(){
+		console.log("ok");
+		var myCm = cm.value;
+		rate(myCm);
+}       
+	function rate(cm){  
+		var rate = (cm) * 0.393701;
+		var Text= cm + "cm는" + rate + "inchi 입니다.";      
+ 		display.innerHTML=Text;   
+ }       
+</script>
+</body>
